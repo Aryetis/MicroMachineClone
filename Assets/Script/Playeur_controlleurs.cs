@@ -20,10 +20,10 @@ public class Playeur_controlleurs : MonoBehaviour {
 			transform.position -= transform.forward*speed*Time.deltaTime;
 		}
 		if (Input.GetKey (KeyCode.RightArrow)){
-			transform.position += (transform+transform.right)*speed*Time.deltaTime;
+			transform.position += (transform.right)*speed*Time.deltaTime;
 		}
 		if (Input.GetKey (KeyCode.LeftArrow)){
-			transform.position += (transform-transform.right)*speed*Time.deltaTime;
+			transform.position -= (transform.right)*speed*Time.deltaTime;
 		}
 	}
 }
